@@ -14,6 +14,18 @@ class GitCommand {
         /*
             Create logic here and run unit testing.
         */
+            let modified_files = this.working_directory.new_changes;
+            let log = "";
+            if (Object.keys(modified_files).length > 0) {
+                log += "You have " + Object.keys(modified_files).length + " change/s.";
+                for (let i = 0; i < Object.keys(modified_files).length; i++) {
+                    log += Object.keys(modified_files)[i] + "";
+                }
+            } else {
+                log += "You have 0 change/s.\n";
+            }
+            console.log(log)
+            return log
     }
 
     //Command: git add <filename/file directory/wildcard> 
