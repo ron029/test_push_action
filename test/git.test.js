@@ -5,7 +5,7 @@ const chai = require('chai');
 const expect = chai.expect;
 
 
-describe("Testing the GitCommand.status()", function(){
+describe("Testing that the GitCommand.status()", function(){
 
     it('Should return the information if has changes in directory', function(){
         let wd = new WorkingDirectory();
