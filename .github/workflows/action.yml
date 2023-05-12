@@ -6,8 +6,7 @@ on:
       - develop
   push:
     branches:
-      - master
-      - develop
+      - '*'
 jobs:
   build:
     name: Build simple project
