@@ -10,11 +10,11 @@ class GitCommand {
     }
 
     //Command: git status
-    /*
+    
     status(){        
         /**
             Create logic here and run unit testing.
-        **
+        **/
             let modified_files = this.working_directory.new_changes;
             let log = "";
             if (Object.keys(modified_files).length > 0) {
@@ -28,7 +28,7 @@ class GitCommand {
             console.log(log)
             return log
     }
-    */
+    
 
     //Command: git add <filename/file directory/wildcard> 
     add(path_file){
